@@ -2,9 +2,9 @@ import pandas as pd
 from datetime import datetime
 from flask import Flask, request, jsonify
 
-# File paths
-CONVERSATION_FILE = r"C:\Users\stefa\Desktop\AI\maintenance-check\conversation_tracker.xlsx"
-INDUCTION_FILE = r"C:\Users\stefa\Desktop\AI\maintenance-check\induction_tracker.xlsx"
+# ✅ File paths (relative to your project directory on Render)
+CONVERSATION_FILE = "conversation_tracker.xlsx"
+INDUCTION_FILE = "induction_tracker.xlsx"
 MAINTENANCE_FILE = "maintenance_schedule.xlsx"
 
 app = Flask(__name__)
