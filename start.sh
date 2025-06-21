@@ -1,2 +1,2 @@
 #!/bin/bash
-gunicorn -b 0.0.0.0:10000 main:app
+gunicorn main:app --bind 0.0.0.0:$PORT
